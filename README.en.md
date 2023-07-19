@@ -1,7 +1,3 @@
----
-typora-copy-images-to: img
----
-
 <h1><div align = "center"><font size="6"><b>DarkPM: Parking Monitoring System in Low-Light Environment</b></font></div></h1>
 
 ## Background
