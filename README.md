@@ -4,8 +4,6 @@
 
 **This** repository is an implementation of our proposed  DarkPG, a parking guidance system, which is suitable for low-light environments. DarkPG integrates the LIME algorithm, YOLOv8 and various parallel computing methods including MPI and NEON instructions. The speed performance of different models and parallel settings on the Phytium FT-2000/4 processor is demonstrated in Results.
 
-For more details, please contact Team 74LS138 in The 7th Integrated Circuit Innovation and Entrepreneurship Competition, Phytium track in 2023.
-
 ## Architecture
 
 The system has the architecture as following, which is divided into three layers. **The First Layer** is the **Input Layer**, which receives real-time input from a wide-angle camera and preprocesses it through **LIME** to enhance image and prepare for recognition. **The Second Layer** is the **Processing Layer**, and this layer mainly uses the optimized **YOLOv8** model to detect and recognize objects in the car park. **The Third Layer** is the **Feedback Layer**, whose function is to provide feedback to the parking lot guidance system based on the detection and recognition results. The guidance system intelligently finds the way through a series of algorithms.
@@ -25,7 +23,7 @@ The system has the architecture as following, which is divided into three layers
 
   It can be seen that our system is at least on par with the original YOLO system in terms of quantity and accuracy of detection and recognition. In the case of high illumination (I, II), our system uses YOLOv8m for recognition with higher recognition rate and accuracy compared to the original YOLOv8m; In the case of low illumination (III, IV), our system uses YOLOv8x for recognition with higher recognition rate and accuracy compared to the original YOLOv8x.
 
-  ![compare2](./img/compare2.jpg)
+  ![compare2](./img/compare2.png)
 
 - Processing Performance
 
