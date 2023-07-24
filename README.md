@@ -1,4 +1,4 @@
-<h1><div align = "center"><font size="6"><b>DarkPM: Parking Monitoring System in Low-Light Environment</b></font></div></h1>
+<h1><div align = "center"><font size="6"><b>DarkPG: Parking Guidance System in Low-Light Environment</b></font></div></h1>
 
 ## Background
 
@@ -10,8 +10,8 @@ For more details, please contact Team 74LS138 in The 7th Integrated Circuit Inno
 
 The system has the architecture as following, which is divided into three layers. **The First Layer** is the **Input Layer**, which receives real-time input from a wide-angle camera and preprocesses it through **LIME** to enhance image and prepare for recognition. **The Second Layer** is the **Processing Layer**, and this layer mainly uses the optimized **YOLOv8** model to detect and recognize objects in the car park. **The Third Layer** is the **Feedback Layer**, whose function is to provide feedback to the parking lot guidance system based on the detection and recognition results. The guidance system intelligently finds the way through a series of algorithms.
 
-![architecture of cluster](/DarkPM/img/architecture%20of%20cluster.png)
-![architecture](/DarkPM/img/architecture.png)
+![architecture of cluster](./img/architecture%20of%20cluster.png)
+![architecture](./img/architecture.png)
 
 ## Results
 
@@ -19,13 +19,13 @@ The system has the architecture as following, which is divided into three layers
 
   The following is the comparison among **the raw pictures (a)**, **results provided by original paper (b)** and **results enhanced by our implementation (c)**. From it, we can see that our implementation of LIME has basically achieved the effect of the original paper. Further more, our implementation has lower noise and lower distortion rate as our strengths.
 
-  ![compare](/DarkPM/img/compare.jpg)
+  ![compare](./img/compare.jpg)
 
   Next, the following is the comparison of the results of **the raw pictures (a)** , **YOLOv8s (b),** **YOLOv8m (c)**, and **YOLOv8x(d)** in **high-light (I, II)** and **low-light (III, IV)**. Among them, I and III are the results of original YOLO, while II and IV are the results of Our System. 
 
   It can be seen that our system is at least on par with the original YOLO system in terms of quantity and accuracy of detection and recognition. In the case of high illumination (I, II), our system uses YOLOv8m for recognition with higher recognition rate and accuracy compared to the original YOLOv8m; In the case of low illumination (III, IV), our system uses YOLOv8x for recognition with higher recognition rate and accuracy compared to the original YOLOv8x.
 
-  ![compare2](/DarkPM/img/compare2.jpg)
+  ![compare2](./img/compare2.jpg)
 
 - Processing Performance
 
@@ -133,3 +133,23 @@ FFTW >= 3.3.8
 - **[YOLOv8](https://github.com/ultralytics/ultralytics)**
 - [**PTVT**](https://europepmc.org/article/ppr/ppr658507), Sharma N, Baral S, Paing M P, et al. Parking Time Violation Tracking using Yolov8 and DeepSORT[J]. 2023.
 - [**LLIV-Phone**](https://arxiv.org/abs/2104.10729), Li C ,  Guo C ,  Han L , et al. Low-Light Image and Video Enhancement Using Deep Learning: A Survey[J].  2021.
+
+# Copyright
+```
+# Copyright      2023  (Zhengrui  Li, https://github.com/NASA1473,
+#                       Haoyu     Wang, https://github.com/Yukijudaii1352)
+#
+# See ./LICENSE for clarification regarding multiple authors
+#
+# Licensed under the GNU GENERAL PUBLIC LICENSE (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.gnu.org/licenses/gpl-3.0.html
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+```
